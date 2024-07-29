@@ -27,20 +27,20 @@ h1{
     margin-bottom: 20px;
 }
 
-.quiz-container, .score-container{
+.quiz-container, .score-container, .start-container{
     display: none;
 }
 
+
 .start-container{
-    display: block;
     width: 500px;
     height: 450px;
     background-color:#ffffff;
     padding: 20px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quiz-container{
@@ -56,6 +56,9 @@ h1{
     height: 450px;
     background-color:#ffffff;
     padding: 20px; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .question{
@@ -80,7 +83,11 @@ h1{
 }
 
 .answer-btn:hover{
+      background-color: #2f2ff7;
+}
 
+.answer-btn.selected{
+    background-color: #f12764;
 }
 
 .start-btn{
@@ -112,6 +119,7 @@ h1{
 .next-btn:hover{
     background-color: #3f3ff5;
 }
+
 
 
 
